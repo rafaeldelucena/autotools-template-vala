@@ -1,7 +1,7 @@
 noinst_PROGRAMS = $(TEST_PROGS)
 
 AM_CPPFLAGS = \
-	$(UNITTEST_CFLAGS)
+	$(UNITTESTS_CFLAGS)
 
 AM_CFLAGS = -Werror \
 			-Wall \
