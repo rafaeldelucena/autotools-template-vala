@@ -10,6 +10,7 @@ AM_INIT_AUTOMAKE([1.11])
 AM_SILENT_RULES([yes])
 
 AC_PROG_CC
+AC_PROG_CXX
 
 
 LT_INIT
@@ -19,11 +20,12 @@ dnl Check for vala
 AM_PROG_VALAC([0.10.0])
 
 
-PKG_CHECK_MODULES(UNITTESTSVALA, [gtk+-3.0 ])
+PKG_CHECK_MODULES(PRODUCTIONCODE, [glib-2.0])
+PKG_CHECK_MODULES(UNITTESTSVALA, [glib-2.0])
 
 
 AC_OUTPUT([
 Makefile
 src/Makefile
-
+test/Makefile
 ])

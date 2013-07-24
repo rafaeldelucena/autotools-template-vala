@@ -1,7 +1,7 @@
 ## Process this file with automake to produce Makefile.in
 ## Created by Anjuta
 
-SUBDIRS = src 
+SUBDIRS = src test 
 
 unittestsvaladocdir = ${prefix}/doc/unittestsvala
 unittestsvaladoc_DATA = \

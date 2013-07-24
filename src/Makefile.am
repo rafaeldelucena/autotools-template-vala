@@ -14,17 +14,14 @@ AM_CFLAGS =\
 	 -Wall\
 	 -g
 
-bin_PROGRAMS = unittestsvala
+bin_PROGRAMS = productioncode
 
-unittestsvala_SOURCES = \
-	unittestsvala.vala config.vapi
+productioncode_SOURCES = \
+	productioncode.vala config.vapi
 
-unittestsvala_VALAFLAGS =  \
-	--pkg gtk+-3.0
+productioncode_VALAFLAGS = 
 
-unittestsvala_LDFLAGS = \
+productioncode_LDFLAGS = \
 	-Wl,--export-dynamic
 
-unittestsvala_LDADD = $(UNITTESTSVALA_LIBS)
-
-
+productioncode_LDADD = $(PRODUCTIONCODE_LIBS)
