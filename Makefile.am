@@ -1,10 +1,13 @@
-## Process this file with automake to produce Makefile.in
-## Created by Anjuta
+SUBDIRS = src
 
-SUBDIRS = src test 
+if ENABLE_TESTS
+SUBDIRS += tests
+endif
 
-unittestsvaladocdir = ${prefix}/doc/unittestsvala
-unittestsvaladoc_DATA = \
+DIST_SUBDIRS = $(SUBDIRS)
+
+autotools_template_valadocdir = ${prefix}/doc/autotools-template-vala
+autotools_template_valadoc_DATA = \
 	README\
 	COPYING\
 	AUTHORS\
@@ -13,9 +16,8 @@ unittestsvaladoc_DATA = \
 	NEWS
 
 
-EXTRA_DIST = $(unittestsvaladoc_DATA)
+EXTRA_DIST = $(autotools_template_valadoc_DATA)
 
 
-# Remove doc directory on uninstall
 uninstall-local:
-	-rm -r $(unittestsvaladocdir)
+	-rm -r $(autotools_template_valadocdir)

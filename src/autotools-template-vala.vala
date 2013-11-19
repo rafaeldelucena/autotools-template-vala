@@ -3,12 +3,12 @@
  * main.c
  * Copyright (C) 2013 rafael <rafael@casaamarelahacking.com.br>
  * 
- * ProductionCodeVala is free software: you can redistribute it and/or modify it
+ * AutotoolsTemplateVala is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
  * Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  * 
- * ProductionCodeVala is distributed in the hope that it will be useful, but
+ * AutotoolsTemplateVala is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
@@ -19,16 +19,9 @@
 
 using GLib;
 
-public class Main : Object 
+public class AutotoolsTemplateVala : Object 
 {
-
-
-	public Main ()
-	{
-	}
-
-	static int main (string[] args) 
-	{
-		return 0;
-	}
+    void nothing() {
+        debug("do nothing...");
+    }
 }

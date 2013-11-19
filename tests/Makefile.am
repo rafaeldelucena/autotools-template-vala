@@ -1,7 +1,7 @@
 noinst_PROGRAMS = $(TEST_PROGS)
 
 AM_CPPFLAGS = \
-	$(UNITTESTS_CFLAGS)
+	$(AUTOTOOLS_TEMPLATE_VALA_CFLAGS)
 
 AM_CFLAGS = -Werror \
 			-Wall \
@@ -14,7 +14,7 @@ unittests_SOURCES = unittests.vala
 
 unittests_LDFLAGS =
 
-unittests_LDADD = $(UNITTESTS_LIBS)
+unittests_LDADD = $(AUTOTOOLS_TEMPLATE_VALA_LIBS)
 
 unittestsvala_VALAFLAGS = 
 
