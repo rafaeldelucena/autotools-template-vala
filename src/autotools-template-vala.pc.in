@@ -1,0 +1,13 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+datarootdir=@datarootdir@
+datadir=@datadir@
+
+Name: libautotools-template-vala
+Description: Vala library with tests
+Version: @VERSION@
+Requires: glib-2.0 gobject-2.0
+Libs: -L${libdir} -lautotools-template-vala
+Cflags: -I${includedir}/autotools-template-vala

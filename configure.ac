@@ -1,5 +1,7 @@
 AC_INIT(autotools-template-vala, 0.1)
 
+AC_CONFIG_MACRO_DIR([m4])
+
 AC_CONFIG_HEADERS([config.h])
 
 AM_INIT_AUTOMAKE([1.11])
@@ -11,7 +13,7 @@ AC_PROG_CC
 LT_INIT
 
 
-AM_PROG_VALAC([0.10.0])
+AM_PROG_VALAC([0.22.0])
 
 
 PKG_CHECK_MODULES(AUTOTOOLS_TEMPLATE_VALA, [glib-2.0])
@@ -28,4 +30,5 @@ AS_IF([test "x$enable_tests" = "xyes"],[
 AC_OUTPUT([
 Makefile
 src/Makefile
+src/autotools-template-vala.pc
 ])
